@@ -6,7 +6,7 @@ info:
     [http://swagger.io](http://swagger.io) or on 
     [irc.freenode.net, #swagger](http://swagger.io/irc/).
   version: 1.0.0
-  title: Swagger Petstore
+  title: Swagger API for Sidebar Theme
   termsOfService: http://swagger.io/terms/
   contact:
     email: apiteam@swagger.io
@@ -16,13 +16,13 @@ info:
 # host: petstore.swagger.io
 # basePath: /v2
 tags:
-- name: pet
-  description: Everything about your Pets
+- name: josh
+  description: Everything about Josh
   externalDocs:
     description: Find out more
     url: http://swagger.io
 - name: store
-  description: Access to Petstore orders
+  description: Access Josh orders
 - name: user
   description: Operations about user
   externalDocs:
@@ -34,9 +34,9 @@ paths:
   /pet:
     post:
       tags:
-      - pet
-      summary: Add a new pet to the store
-      operationId: addPet
+      - josh
+      summary: Add a new Josh to the store
+      operationId: addJosh
       consumes:
       - application/json
       - application/xml
@@ -46,7 +46,7 @@ paths:
       parameters:
       - in: body
         name: body
-        description: Pet object that needs to be added to the store
+        description: Josh object that needs to be added to the store
         required: true
         schema:
           $ref: '#/definitions/Pet'
@@ -71,7 +71,7 @@ paths:
       parameters:
       - in: body
         name: body
-        description: Pet object that needs to be added to the store
+        description: Josh object that needs to be added to the store
         required: true
         schema:
           $ref: '#/definitions/Pet'
@@ -79,7 +79,7 @@ paths:
         400:
           description: Invalid ID supplied
         404:
-          description: Pet not found
+          description: Josh not found
         405:
           description: Validation exception
       security:
