@@ -16,13 +16,13 @@ info:
 # host: petstore.swagger.io
 # basePath: /v2
 tags:
-- name: josh
-  description: Everything about Josh
+- name: pets
+  description: Everything about Pets
   externalDocs:
     description: Find out more
     url: http://swagger.io
 - name: store
-  description: Access Josh orders
+  description: Access Pet orders
 - name: user
   description: Operations about user
   externalDocs:
@@ -34,9 +34,9 @@ paths:
   /pet:
     post:
       tags:
-      - josh
-      summary: Add a new Josh to the store
-      operationId: addJosh
+      - pet
+      summary: Add a new Pet to the store
+      operationId: addPet
       consumes:
       - application/json
       - application/xml
@@ -46,7 +46,7 @@ paths:
       parameters:
       - in: body
         name: body
-        description: Josh object that needs to be added to the store
+        description: Pet object that needs to be added to the store
         required: true
         schema:
           $ref: '#/definitions/Pet'
@@ -71,7 +71,7 @@ paths:
       parameters:
       - in: body
         name: body
-        description: Josh object that needs to be added to the store
+        description: Pet object that needs to be added to the store
         required: true
         schema:
           $ref: '#/definitions/Pet'
@@ -79,7 +79,7 @@ paths:
         400:
           description: Invalid ID supplied
         404:
-          description: Josh not found
+          description: Pet not found
         405:
           description: Validation exception
       security:
