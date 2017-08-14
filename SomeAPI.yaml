@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   description: |
-    This is a sample server Petstore server.  You can find 
+    This is a sample server Joshstore server.  You can find 
     out more about Swagger at 
     [http://swagger.io](http://swagger.io) or on 
     [irc.freenode.net, #swagger](http://swagger.io/irc/).
@@ -16,8 +16,8 @@ info:
 # host: petstore.swagger.io
 # basePath: /v2
 tags:
-- name: pets
-  description: Everything about Pets
+- name: josh
+  description: Everything about Josh
   externalDocs:
     description: Find out more
     url: http://swagger.io
